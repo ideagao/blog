@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/**
+     * ideagao blog 样式
+ */
+/* line 17, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/**
+     * 外层容器样式
+ */
+/* line 13, ../sass/screen.scss */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Microsoft Yahei";
+  color: #333333;
+  /**
+       * 内容区域样式
+   */
+  /**
+       * 底部样式
+   */ }
+  /* line 21, ../sass/screen.scss */
+  .container .content {
+    background-color: white;
+    /**
+         * 内容区域主要内容样式
+     */ }
+    /* line 26, ../sass/screen.scss */
+    .container .content .left {
+      float: left;
+      width: 79.999999%;
+      background-color: white; }
+    /* line 31, ../sass/screen.scss */
+    .container .content .right {
+      float: left;
+      width: 20%;
+      background-color: white; }
+  /* line 37, ../sass/screen.scss */
+  .container .header {
+    height: 100px;
+    background-color: white;
+    position: relative; }
+    /* line 41, ../sass/screen.scss */
+    .container .header .nav {
+      position: absolute;
+      left: 5px;
+      top: 70px; }
+      /* line 45, ../sass/screen.scss */
+      .container .header .nav ul li {
+        float: left;
+        margin-right: 10px;
+        font-size: 20px;
+        line-height: 30px;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+        background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+        background-image: -moz-linear-gradient(#ffffff, #dddddd);
+        background-image: -o-linear-gradient(#ffffff, #dddddd);
+        background-image: linear-gradient(#ffffff, #dddddd); }
+        /* line 51, ../sass/screen.scss */
+        .container .header .nav ul li a {
+          color: #333333; }
+  /* line 60, ../sass/screen.scss */
+  .container .footer {
+    background-color: white;
+    height: 60px;
+    padding-top: 40px;
+    /**
+         * 版权信息样式
+     */ }
+    /* line 67, ../sass/screen.scss */
+    .container .footer .info {
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      font-size: 18px;
+      padding: 5px 0;
+      background-color: #dddddd;
+      -webkit-box-shadow: 0px 0px 5px #333333;
+      -moz-box-shadow: 0px 0px 5px #333333;
+      box-shadow: 0px 0px 5px #333333;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px; }
+
+/* line 80, ../sass/screen.scss */
+.box {
+  background-color: white;
+  margin: 10px 5px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 85, ../sass/screen.scss */
+  .box .box-header {
+    padding: 10px 0 10px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+    background-image: -moz-linear-gradient(#ffffff, #dddddd);
+    background-image: -o-linear-gradient(#ffffff, #dddddd);
+    background-image: linear-gradient(#ffffff, #dddddd); }
+  /* line 91, ../sass/screen.scss */
+  .box .box-content {
+    padding: 10px;
+    background-color: #dddddd; }
+
+/* line 97, ../sass/screen.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1; }

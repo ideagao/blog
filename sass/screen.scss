@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/**
+     * ideagao blog 样式
+ */
+@import "base.scss";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+/**
+     * 外层容器样式
+ */
+.container{
+     width: 80%;
+     margin: 0 auto;
+     font-family:"Microsoft Yahei";
+     color:$baseFontColor;
+     /**
+          * 内容区域样式
+      */
+    .content{
+        background-color: $contentBgColor;
+        /**
+             * 内容区域主要内容样式
+         */
+        .left{
+            float: left;
+            width: 79.999999%;
+            background-color: $contentLeftBgColor;
+        }
+        .right{
+            float: left;
+            width: 20%;
+            background-color: $contentRightBgColor;
+        }
+    }
+    .header{
+       height: 100px;
+       background-color: $headerBgColor;
+       position: relative;
+       .nav{
+           position: absolute;
+           left: 5px;
+           top: 70px;
+       ul li{
+           float: left;
+           margin-right: 10px;
+           font-size: 20px;
+           line-height: 30px;
+           @include background-image(linear-gradient($boxHeadStart,$boxHeadEnd));
+           a{
+              @include link-colors($baseFontColor);
+           }
+       }
+       }
+    }
+    /**
+         * 底部样式
+     */
+    .footer{
+        background-color:$footerBgColor;
+        height: 60px;
+        padding-top: 40px;
+        /**
+             * 版权信息样式
+         */
+        .info{
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            font-size: 18px;
+            padding: 5px 0;
+            background-color:$footerInfoBgColor;
+            @include box-shadow();
+            @include border-radius(5px);
+        }
+    } 
+}
+
+.box{
+    background-color: $boxBg;
+    margin: 10px 5px;
+    @include box-shadow();
+    @include border-radius(5px);
+    .box-header{
+        padding: 10px 0 10px 5px;
+        font-size: 18px;
+        font-weight: bold;
+        @include background-image(linear-gradient($boxHeadStart,$boxHeadEnd));
+    }
+    .box-content{
+        padding: 10px;
+        background-color: $boxContentBg;
+    }
+}
+
+.clearfix{
+   @include clearfix; 
+}
+
+
+
